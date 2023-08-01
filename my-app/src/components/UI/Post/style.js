@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 
 const postStyle = StyleSheet.create({
   container: {
-    paddingVertical: 20,
+    paddingTop: 20,
+    paddingBottom: 100,
     height: 400,
   },
   postImage: {
@@ -11,14 +12,13 @@ const postStyle = StyleSheet.create({
   },
   postHeader: {
     flexDirection: "row",
-    marginTop: 10,
     height: 50,
     justifyContent: "flex-start",
     alignItems: "center",
   },
   postActionContainer: {
     flexDirection: "row",
-    marginTop: 0,
+    marginTop: 10,
     maxHeight: "10%",
     justifyContent: "flex-start",
     alignItems: "center",
