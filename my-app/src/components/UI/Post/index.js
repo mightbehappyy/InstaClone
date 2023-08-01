@@ -23,7 +23,7 @@ export function Post({ profilePic, userName, postImage }) {
               ></Image>
             </View>
           </View>
-          <Text style={{ color: "white" }}>AAA</Text>
+          <Text style={{ color: "white" }}>{userName}</Text>
         </View>
       </View>
       <View style={postContainer.postImage}>
