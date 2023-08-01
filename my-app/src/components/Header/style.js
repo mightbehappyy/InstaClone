@@ -13,7 +13,7 @@ const headerStyle = StyleSheet.create({
     maxWidth: "35%",
     resizeMode: "contain",
     marginVertical: 30,
-    marginHorizontal: 50,
+    marginHorizontal: 15,
     marginRight: 150,
   },
   actionButtons: {
@@ -21,7 +21,7 @@ const headerStyle = StyleSheet.create({
     maxWidth: "10%",
     resizeMode: "contain",
     marginVertical: 20,
-    marginHorizontal: 40,
+    marginRight: 10,
   },
   actionButtonView: {},
 });
