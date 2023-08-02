@@ -1,7 +1,6 @@
 import { Image, View, Text } from "react-native";
 import postContainer from "./style";
-export function Post({ profilePic, userName, postImage }) {
-  const testImage = require("../../../../assets/Chainsaw.jpg");
+export function Post({ profilePic, userName, postImage, subtitle, numLikes }) {
   const likeImage = require("../../../../assets/instagramHeartDark.png");
   const shareImage = require("../../../../assets/instagramMessage.png");
   const commentImage = require("../../../../assets/commentBubble.png");
@@ -27,12 +26,21 @@ export function Post({ profilePic, userName, postImage }) {
         </View>
       </View>
       <View style={postContainer.postImage}>
-        <Image source={testImage} style={postContainer.postImage}></Image>
+        <Image source={postImage} style={postContainer.postImage}></Image>
       </View>
       <View style={postContainer.postActionContainer}>
         <Image source={likeImage} style={postContainer.postActionButton} />
         <Image source={commentImage} style={postContainer.postCommentButton} />
         <Image source={shareImage} style={postContainer.postActionButton} />
+      </View>
+      <View style={postContainer.postLikesContainer}>
+        <Text style={postContainer.postLikes}>{numLikes} Likes</Text>
+        <Text style={postContainer.postLikes}>
+          {userName} {subtitle}
+        </Text>
+        <Text style={postContainer.viewAllComments}>
+          View all {numLikes} comments
+        </Text>
       </View>
     </View>
   );

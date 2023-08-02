@@ -3,11 +3,10 @@ import { StyleSheet } from "react-native";
 const postStyle = StyleSheet.create({
   container: {
     paddingTop: 20,
-    paddingBottom: 100,
-    height: 400,
+    flex: 1,
   },
   postImage: {
-    height: "100%",
+    height: 300,
     width: "100%",
   },
   postHeader: {
@@ -27,7 +26,6 @@ const postStyle = StyleSheet.create({
     height: 30,
     maxWidth: 30,
     resizeMode: "contain",
-    marginVertical: 20,
     marginHorizontal: 5,
   },
   postCommentButton: {
@@ -43,8 +41,8 @@ const postStyle = StyleSheet.create({
     alignItems: "center",
   },
   storyProfile: {
-    width: 50,
-    height: 50,
+    width: 45,
+    height: 45,
     borderRadius: 80 / 2,
     borderWidth: 2,
     borderColor: "#f09433",
@@ -57,6 +55,22 @@ const postStyle = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderRadius: 80 / 2,
+  },
+  postLikesContainer: {
+    flexDirection: "column",
+    maxHeight: "10%",
+    justifyContent: "flex-end",
+    marginTop: 30,
+  },
+  postLikes: {
+    color: "white",
+    height: 30,
+    marginHorizontal: 10,
+  },
+  viewAllComments: {
+    color: "grey",
+    height: 15,
+    marginHorizontal: 10,
   },
 });
 export default postStyle;
